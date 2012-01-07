@@ -1,0 +1,26 @@
+*{margin:0;padding:0;}
+body{font:13px/1.6 sans-serif; margin-left:20px; width:560px; }
+a,a:visited{color:#000; text-decoration:none; }
+a:visited{ font-weight:normal; }
+a:hover{ text-decoration:underline; }
+a{font-weight:bold;}
+p,blockquote{margin-bottom:1em; }
+#daptar{ margin-left:100px;}
+header#top>h1>a{ text-indent:-10000px; display:block; line-height:80px; background:url(/gambar/logobaru.png) no-repeat; }
+nav{ width:100px; float:left;}
+nav a{ text-indent:-10000px; display:block; line-height: 80px; margin-bottom:1em;}
+nav a#home{ background:url(/gambar/home.png)  center no-repeat; }
+nav a#arsip{ background:url(/gambar/arsip.png)  center no-repeat;}
+nav a#about{ background:url(/gambar/about.png)  center no-repeat;}
+nav li{ list-style-type:none; }
+article header h2{ font-size: 28px; font-family: 'Oldenburg', sans-serif; line-height: 1.2em; }
+article header h2 span{ font-size:12px; color:#999; }
+article p{ font-family: 'Actor', sans-serif; }
+img, a img{ border:5px solid #999; margin:auto 1em; }
+img:hover{ border-color:#444; }
+blockquote{ padding-left:30px; background:url(/gambar/quot.png) top left no-repeat; }
+article footer{ text-align:right; }
+hr{ margin: 2em auto; background-color:#fff; border:none; border-bottom:.1em dotted #000; } 
+#daptar>hr{ width:160px;}
+#daftar-posting li{ list-style-type:none; padding:.2em auto; border-bottom:1px dotted #000; }
+body>footer{ display:block; clear:both; }
