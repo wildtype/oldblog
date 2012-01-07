@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<title>Project Euler Problem 29</title>
+		<style>
+		<!--
+			@import url('http://fonts.googleapis.com/css?family=Crimson+Text|Delius');
+			*{margin:0;padding:0;}
+			body{font:14px/1.4 Georgia, Serif;  color:#444; background:#fff;}
+			a,a:visited{color:#000;text-decoration:underline}
+			a:hover{text-decoration:none;}
+			p{margin-bottom:1em;}
+			img{ border:1px solid #444; padding:.1em; }
+			#plak{width:760px;text-align:left;margin:20px 20px;}
+			h1 a, h2 a, h3 a{ text-decoration:none;}
+			h1{ font-size:32px; margin-bottom:.4em}
+			h2{font-size:32px;font-family:'Crimson Text';line-height:1em;padding-bottom:.2em;}
+			h3{font-size:20px;}
+			.tanggal{ left:-100px; float:left; position:relative; font-size:13px;}
+			.hed{ width:250px; text-align:center; position:fixed;}
+			.hed h1{line-height:333px; background:url(/logo.png) top left no-repeat; text-align:left;}
+			.hed>h1>a{text-indent:-10000px; display:block; }
+			#utama{margin-left:280px; margin-top:40px; float:right;}
+			hr{ background:#fff; border:none; border-bottom:2px dotted #444; width:120px; margin:2em auto;}
+			#daftar-posting>li{ list-style:none; line-height:2em; }
+			span.info-arsip{ width:160px; }
+		-->
+		</style>
+	</head>
+	<body>
+		<div id="plak">
+			<div class="hed">
+				<h1><a href="http://wildtype.github.com/">Wildtype</a></h1>
+			</div>
+			<div id="utama">
+				<h2><a href="">Project Euler Problem 29</a></h2>
+<p>Problem 29 ini, lagi-lagi bisa selesai dengan jurus asal-paksa, tentu saja dengan bantuan ular <a href="http://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>. Pertanyaannya, ada berapa nilai a <sup>b</sup> yang berbeda untuk 2&lt;=a&lt;=100 dan 2&lt;=b&lt;=100? Kemungkinan terbesar cuma 99*99 atau 9801 biji, sedikit itu. Tapi ya jumlahnya nggak sebanyak itu, karena misalnya saja 2 <sup>4</sup> sama 4 <sup>2</sup> kan ya..</p>
+<p>Step yang saya kerjakan:</p>
+<ol>
+	<li>Buat list kosong, list ini untuk menyimpan hasil hitungan a <sup>b</sup>.</li>
+	<li>Hitung a <sup>b</sup> untuk a dari 2 sampai 100, masing-masing b dari 2 sampai 100 juga.</li>
+	<li>Tiap hasil ab tadi, dicek apakah sudah ada di dalam list, kalau belum, masukkan ke dalam list.</li>
+	<li>Setelah beres, hitung jumlah anggota list.</li>
+	<li>Beres.</li>
+</ol>
+<p class="info">14 May 2011</p>
+<hr />
+
+				<p>Daftar tulisan bisa dilihat di halaman <a href="/arsip.html">arsip</a> atau via <a href="/rss.xml">RSS</a>. Dibuat dengan vim, gimp, jekyll, dan dipublish dengan github.
+			</div>
+		</div>
+	</body>
+</html>
+
+					
