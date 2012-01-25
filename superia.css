@@ -1,0 +1,26 @@
+*{ margin:0; padding:0; }
+
+body{ font:16px/1.6em 'PT Sans', sans-serif; color:#222; width:960px; margin:auto;} 
+body>header{text-align:left; float:right;width:200px;padding:20px; border:2px dotted #555; border-top:none; }
+body>header h1{ padding-left: 42px; background:url(/hr.png) no-repeat 0 6px; /*float:left;*/ font:30px/46px sans-serif; }
+body>header h1 a{ color:#000; text-decoration:none; }
+body>header nav{ font-family:Georgia; }
+body>header nav a{ text-decoration:none; color:#000; }
+body>header nav ul li{ list-style-type:none;  /*display:inline; padding:.6em;line-height:30px;*/ }
+body>header nav li:before{ content:'»' }
+a,a:visited{color:#00c; text-decoration:none;}
+a:visited{text-decoration:underline;}
+a:hover{color:#00f;}
+header a:visited{ color:#000; }
+article>header{ text-align:left; font-size:13px; font-family: Serif; }
+article h2>a{color:#000;}
+article h2{ font:30px/46px 'PT Serif Caption', sans-serif; }
+p{margin-bottom:1em;}
+article p{ text-align:justify; }
+article>footer{ text-align:right; }
+.artikel>hr{ border:none; min-height:60px; /*background:url(hr-jon-lucas2.jpg) no-repeat top center; margin:2em auto; */}
+.artikel{ margin-right:260px; padding-top:20px;}
+body>hr{ border:none; border-top:3px solid #000;}
+body>footer{ text-align:center; }
+aside{ text-align:center; font:18px/4em Georgia, serif; }
+body>header:focus{ background-color:#ffd}
