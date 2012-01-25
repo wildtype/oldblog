@@ -1,33 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>	
 <html>
 	<head>
-	<meta charset="UTF-8" />
-    <title>Wildtype</title>
-    <link rel="stylesheet" href="/lembargaya.css" />
-    <link href='http://fonts.googleapis.com/css?family=Oldenburg|Actor'
-    rel='stylesheet' type='text/css'>
-  </head>
-<body>
-  <header id="top">
-    <h1><a href="http://wildtype.github.com/">wildtype</a></h1>
-  </header>
-  <hr /><section>
-  <nav>
-    <ul id="navigasi">
-      <li><a id="home" href="/index.html" title="Beranda Rumah">Beranda</a></li>
-      <li><a id="arsip" href="/arsip.html" title="Arsip">Arsip</a></li>
-      <li><a id="about" href="/tentang-saya.html" title="Halaman tidak penting tentang saya">Tentang Saya</a></li>
-    </ul>
-  </nav>
-  <section id="daptar">
-<article>
-	<header><h2><a href="http://wildtype.github.com//jurnal/project-euler-problem-34.html">Project Euler Problem 34, Factorion</a><span>// 14 May 2011</span></h2></header>
+		<meta enconding="utf-8" />
+		<meta http-equiv="content-type" content="text/html;charset-UTF-8" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|PT+Serif+Caption:400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/superia.css" />
+		<title>Wildtype - Project Euler Problem 34, Factorion</title>
+	</head>
+
+	<body>
+		<header id="top">
+			<h1><a href="/index.html">wildtype</a></h1>
+			<nav><ul>
+				<li><a href="/index.html">Beranda</a></li>
+				<li><a href="/arsip.html">Arsip</a></li>
+				<li><a href="/saya.html">Profil</a></li></ul>
+			</nav>
+		</header>
+		<section class="artikel">
+			<!--<article>
+				<header><h2><a href="#">Post Title</a></h2><span class="posted">23 Januari 2012</span></header>
+				<p>Sudah <a href="#">merupakan</a> fakta bahwa seorang pembaca akan terpengaruh oleh isi tulisan dari sebuah halaman saat ia melihat tata letaknya. Maksud penggunaan Lorem Ipsum adalah karena ia kurang lebih memiliki penyebaran huruf yang normal, ketimbang menggunakan kalimat seperti "Bagian isi disini, bagian isi disini", sehingga ia seolah menjadi naskah Inggris yang bisa dibaca. Banyak paket Desktop Publishing dan editor situs web yang kini menggunakan Lorem Ipsum sebagai contoh teks. Karenanya pencarian terhadap kalimat "Lorem Ipsum" akan berujung pada banyak situs web yang masih dalam tahap pengembangan. Berbagai versi juga telah berubah dari tahun ke tahun, kadang karena tidak sengaja, kadang karena disengaja (misalnya karena dimasukkan unsur humor atau semacamnya)</p>
+				<footer><a href="#">Komentar</a></footer>
+			</article><hr/>
+			<article>
+				<p>Kemarin saya mengimpor beberapa tulisan dari blog lama. Karena tidak ada pengkategorian dalam blog ini, postingan hanya saya tulis catatan saja</p>
+				<footer><a href="#">#</a></footer>
+			</article><hr/>-->
+			<article>
+	<header>
+		<h2><a href="/jurnal/project-euler-problem-34.html">Project Euler Problem 34, Factorion</a></h2>
+		<span class="posted">14 May 2011</span>
+	</header>
 	<p>Pendahuluannya 145, digitnya 1,4,5. Nah 1! + 4! + 5! = 1+24+120 = 145. Rumusan masalahnya, Berapa jumlah semua bilangan yang nilainya sama dengan jumlah faktorial digitnya, seperti 145 itu?</p>
 <p>Sebenernya ini apa ya sebutannya? Brute force juga lah. Karena digit itu antara 0 sampai 9, jadi kira-kira maksimum bilangannya kurang dari 9 faktorial, 362880. Pembuktiannya, nggak ngerti saya. Itu sebenernya ngasal aja, hehe, kebetulan bener.</p>
 <p>Jadi stepnya dari 362880 sampai 1, dihitung tiap bilangan apakah sama dengan jumlah faktorial digitnya. Tentu, sebelumnya dibikin dulu nilai faktorial dari 0 sampai 9. Sebenernya agak mubazir juga cara ini, karena hanya 2 angka saja, 145 tadi, dan angka sekitar 40ribuan (hitunglah sendiri, biar seru). Angka 1 dan 2 tidak masuk hitungan, karena bukan hasil penjumlahan faktorial digit.</p>
 <p>Belakangan saya baru tau, bilangan-bilangan ini disebut <a href="http://google.com/search?q=factorion">Factorion</a>.</p>
 <p>(<em>Tulisan ini adalah repost dari blog saya yang <a href="http://apapun.posterous.com/project-euler-problem-34-factorion">lama</a></em>)</p>
-	<footer>
+
+<footer>
 	<h3>Komentar</h3>
 	<div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -46,15 +57,14 @@
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 	</footer>
+
 </article>
 <hr />
-<p>Daripada mengunjungi halaman previous, lebih lama, sebelumnya, next, atau apapunlah itu, lebih baik lihat <a href="/arsip.html">halaman arsip yang isinya daftar tulisan</a>, satuju?</p>
-</section>
+<aside><a href="arsip.html">Lihat Arsip</a> atau <a href="#top">kembali ke atas</a>.</aside>	
 
-</section>
-<footer>
-<hr />
-<p>Ditulis dengan vim, jekyll, dan dipublish lewat github.</p>
-</footer>
-</body>
+
+		</section>
+		<hr/>
+				<footer>Ditulis dengan vim, jekyll, dan github</footer>
+	</body>
 </html>

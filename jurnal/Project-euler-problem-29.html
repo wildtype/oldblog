@@ -1,37 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>	
 <html>
 	<head>
-	<meta charset="UTF-8" />
-    <title>Wildtype</title>
-    <link rel="stylesheet" href="/lembargaya.css" />
-    <link href='http://fonts.googleapis.com/css?family=Oldenburg|Actor'
-    rel='stylesheet' type='text/css'>
-  </head>
-<body>
-  <header id="top">
-    <h1><a href="http://wildtype.github.com/">wildtype</a></h1>
-  </header>
-  <hr /><section>
-  <nav>
-    <ul id="navigasi">
-      <li><a id="home" href="/index.html" title="Beranda Rumah">Beranda</a></li>
-      <li><a id="arsip" href="/arsip.html" title="Arsip">Arsip</a></li>
-      <li><a id="about" href="/tentang-saya.html" title="Halaman tidak penting tentang saya">Tentang Saya</a></li>
-    </ul>
-  </nav>
-  <section id="daptar">
-<article>
-	<header><h2><a href="http://wildtype.github.com//jurnal/Project-euler-problem-29.html">Project Euler Problem 29</a><span>// 14 May 2011</span></h2></header>
-	<p>Problem 29 ini, lagi-lagi bisa selesai dengan jurus asal-paksa, tentu saja dengan bantuan ular <a href="http://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>. Pertanyaannya, ada berapa nilai a <sup>b</sup> yang berbeda untuk 2&lt;=a&lt;=100 dan 2&lt;=b&lt;=100? Kemungkinan terbesar cuma 99*99 atau 9801 biji, sedikit itu. Tapi ya jumlahnya nggak sebanyak itu, karena misalnya saja 2 <sup>4</sup> sama 4 <sup>2</sup> kan ya..</p>
+		<meta enconding="utf-8" />
+		<meta http-equiv="content-type" content="text/html;charset-UTF-8" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|PT+Serif+Caption:400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/superia.css" />
+		<title>Wildtype - Project Euler Problem 29</title>
+	</head>
+
+	<body>
+		<header id="top">
+			<h1><a href="/index.html">wildtype</a></h1>
+			<nav><ul>
+				<li><a href="/index.html">Beranda</a></li>
+				<li><a href="/arsip.html">Arsip</a></li>
+				<li><a href="/saya.html">Profil</a></li></ul>
+			</nav>
+		</header>
+		<section class="artikel">
+			<!--<article>
+				<header><h2><a href="#">Post Title</a></h2><span class="posted">23 Januari 2012</span></header>
+				<p>Sudah <a href="#">merupakan</a> fakta bahwa seorang pembaca akan terpengaruh oleh isi tulisan dari sebuah halaman saat ia melihat tata letaknya. Maksud penggunaan Lorem Ipsum adalah karena ia kurang lebih memiliki penyebaran huruf yang normal, ketimbang menggunakan kalimat seperti "Bagian isi disini, bagian isi disini", sehingga ia seolah menjadi naskah Inggris yang bisa dibaca. Banyak paket Desktop Publishing dan editor situs web yang kini menggunakan Lorem Ipsum sebagai contoh teks. Karenanya pencarian terhadap kalimat "Lorem Ipsum" akan berujung pada banyak situs web yang masih dalam tahap pengembangan. Berbagai versi juga telah berubah dari tahun ke tahun, kadang karena tidak sengaja, kadang karena disengaja (misalnya karena dimasukkan unsur humor atau semacamnya)</p>
+				<footer><a href="#">Komentar</a></footer>
+			</article><hr/>
+			<article>
+				<p>Kemarin saya mengimpor beberapa tulisan dari blog lama. Karena tidak ada pengkategorian dalam blog ini, postingan hanya saya tulis catatan saja</p>
+				<footer><a href="#">#</a></footer>
+			</article><hr/>-->
+			<article>
+	<header>
+		<h2><a href="/jurnal/Project-euler-problem-29.html">Project Euler Problem 29</a></h2>
+		<span class="posted">14 May 2011</span>
+	</header>
+	<p>Problem 29 ini, lagi-lagi bisa selesai dengan jurus asal-paksa, tentu saja dengan bantuan ular <a href="http://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>. Pertanyaannya, ada berapa nilai a^b yang berbeda untuk 2&lt;=a&lt;=100 dan 2&lt;=b&lt;=100? Kemungkinan terbesar cuma 99*99 atau 9801 biji, sedikit itu. Tapi ya jumlahnya nggak sebanyak itu, karena misalnya saja 2^4 sama 4^2 kan ya..</p>
 <p>Step yang saya kerjakan:</p>
 <ol>
-	<li>Buat list kosong, list ini untuk menyimpan hasil hitungan a <sup>b</sup>.</li>
-	<li>Hitung a <sup>b</sup> untuk a dari 2 sampai 100, masing-masing b dari 2 sampai 100 juga.</li>
+	<li>Buat list kosong, list ini untuk menyimpan hasil hitungan a^b.</li>
+	<li>Hitung a^b untuk a dari 2 sampai 100, masing-masing b dari 2 sampai 100 juga.</li>
 	<li>Tiap hasil ab tadi, dicek apakah sudah ada di dalam list, kalau belum, masukkan ke dalam list.</li>
 	<li>Setelah beres, hitung jumlah anggota list.</li>
 	<li>Beres.</li>
 </ol>
-	<footer>
+
+<footer>
 	<h3>Komentar</h3>
 	<div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -50,15 +61,14 @@
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 	</footer>
+
 </article>
 <hr />
-<p>Daripada mengunjungi halaman previous, lebih lama, sebelumnya, next, atau apapunlah itu, lebih baik lihat <a href="/arsip.html">halaman arsip yang isinya daftar tulisan</a>, satuju?</p>
-</section>
+<aside><a href="arsip.html">Lihat Arsip</a> atau <a href="#top">kembali ke atas</a>.</aside>	
 
-</section>
-<footer>
-<hr />
-<p>Ditulis dengan vim, jekyll, dan dipublish lewat github.</p>
-</footer>
-</body>
+
+		</section>
+		<hr/>
+				<footer>Ditulis dengan vim, jekyll, dan github</footer>
+	</body>
 </html>
