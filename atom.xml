@@ -1,22 +1,560 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://wildtype.github.com</id>
-    <title>Wildtype</title>
-    <link href="http://wildtype.github.com/atom.xml" rel="self" />
-    <link href="http://wildtype.github.com/" />
-    
-{% for post in site.posts offset:0 limit: 5 %}
-<entry>
-	<title>{{ post.title }}</title>
-	<author>
-		<name>Mufti</name>
-	</author>
-   <link href="{{ post.url }}" type="text/html" />
-   <id>{{ post.url }}</id>
-   <updated>{{ post.date | date_to_long_string }}</updated>
-	<content type="html"><![CDATA[
-{{ post.content }
-    ]]></content>
-</entry>
-{% endfor %}
+ 
+  <title>Wiltype</title>
+  <link href="http://wildtype.github.com/"/>
+  <link type="application/atom+xml" rel="self" href="http://wildtype.github.com/atom.xml"/>
+  <updated>2012-02-17T02:36:32+07:00</updated>
+  <id>http://wildtype.github.com/</id>
+  <author>
+    <name>Mufti</name>
+    <email>mufti.sip@gmail.com</email>
+  </author>
+
+  
+  <entry>
+    <id>http://wildtype.github.com/jurnal/flashdisk</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/flashdisk.html"/>
+    <title>Modem + Microsd = flashdisk</title>
+    <updated>2012-01-09T00:00:00+07:00</updated>
+    <author>
+      <name>Mufti</name>
+      <uri>http://wildtype.github.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/muftisip/6660704373/&quot;
+title=&quot;DSCF0991 by muftisip, on Flickr&quot;&gt;&lt;img
+src=&quot;http://farm8.staticflickr.com/7147/6660704373_7295ec1115_m.jpg&quot;
+width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSCF0991&quot; align=&quot;left&quot;&gt;&lt;/a&gt;&lt;br /&gt;
+Saya tidak punya flashdisk. Flashdisk yang 256mb kapasitasnya itu entah. Mungkin tertinggal di rumah sana. Biasanya pakai hardisk, tapi tukang print di pinggir jalan dekat kampus itu sering malas nancepin ke belakang PC. Biasanya, hardisk eksternal butuh power lebih &amp;amp; nggak kuat kalau ditancep di port &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; depan. Jadilah pakai memory card dari henpon &amp;amp; modem 3g kalau mau ngeprin.&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>http://wildtype.github.com/jurnal/blog-like-a-boss</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/like-a-boss.html"/>
+    <title>Pindahan ke Github</title>
+    <updated>2011-10-31T00:00:00+07:00</updated>
+    <author>
+      <name>Mufti</name>
+      <uri>http://wildtype.github.com/</uri>
+    </author>
+    <content type="html">&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;/gambar/boss.gif&quot; title=&quot;like a boss&quot; alt=&quot;like a boss&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Asik jadi juga halaman blog ini, dibuat pake jekyll &amp;amp; dipublish lewat github. Desainnya seenak perut, itu logo niatnya gambar &lt;em&gt;Drosophila melanogaster&lt;/em&gt; wildtype, tapi ya jadinya gitu lah, geleh. Halaman lain nanti saja dibikin, sekalian mindah postingan dari blog lama ke sini.&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>http://wildtype.github.com/jurnal/project-euler-problem-53</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/project-euler-problem-53.html"/>
+    <title>Project Euler Problem 53</title>
+    <updated>2011-05-14T00:00:00+07:00</updated>
+    <author>
+      <name>Mufti</name>
+      <uri>http://wildtype.github.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;Problem ini ternyata bisa diselesaikan pake jurus brutal alias bruteforce. Inti persoalannya, mencari jumlah &lt;sup&gt;n&lt;/sup&gt; C &lt;sub&gt;r&lt;/sub&gt; yang pertama kali nilainya lebih besar dari sejuta untuk 1&amp;lt;=n&amp;lt;=100. Yah kita tau kalau &lt;sup&gt;n&lt;/sup&gt; C &lt;sub&gt;r&lt;/sub&gt; itu maksudnya kombinasi r elemen dari set yang jumlahnya n. Di soalnya juga ada rumus carinya. Karena n antara 1 sampai 100 dan r lebih kecil samadengan 100, jadi cuma ada 10000 kemungkinan kombinasi. Pake python, sedikit itu. Python juga bisa menghitung angka besar tanpa perlu kode aneh-aneh, jadi, ya itu tadi, bisa diselesaikan dengan bruteforce.&lt;/p&gt;
+&lt;p&gt;Cara saya, bikin dulu list faktorial 1 sampai 100. Pake cara apa itu namanya, dynamic programming mungkin, gak ngertilah. Tinggal dikali-kali saja listnya, jadi. Step berikutnya, iterasi n 1 sampai 100, iterasi r 1 sampai n, hitung &lt;sup&gt;n&lt;/sup&gt; C &lt;sub&gt;r&lt;/sub&gt;. Tiap nilainya lebih dari 1000000, dihitung. Beres.&lt;/p&gt;
+&lt;p&gt;Ah, kebanyakan bikin laporan, jadi aneh gini nulis blog.&lt;/p&gt;
+&lt;p&gt;(&lt;em&gt;Tulisan ini adalah repost dari blog saya yang &lt;a href=&quot;http://apapun.posterous.com/project-euler-problem-53&quot;&gt;lama&lt;/a&gt;&lt;/em&gt;)&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>http://wildtype.github.com/jurnal/project-euler-problem-34</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/project-euler-problem-34.html"/>
+    <title>Project Euler Problem 34, Factorion</title>
+    <updated>2011-05-14T00:00:00+07:00</updated>
+    <author>
+      <name>Mufti</name>
+      <uri>http://wildtype.github.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;Pendahuluannya 145, digitnya 1,4,5. Nah 1! + 4! + 5! = 1+24+120 = 145. Rumusan masalahnya, Berapa jumlah semua bilangan yang nilainya sama dengan jumlah faktorial digitnya, seperti 145 itu?&lt;/p&gt;
+&lt;p&gt;Sebenernya ini apa ya sebutannya? Brute force juga lah. Karena digit itu antara 0 sampai 9, jadi kira-kira maksimum bilangannya kurang dari 9 faktorial, 362880. Pembuktiannya, nggak ngerti saya. Itu sebenernya ngasal aja, hehe, kebetulan bener.&lt;/p&gt;
+&lt;p&gt;Jadi stepnya dari 362880 sampai 1, dihitung tiap bilangan apakah sama dengan jumlah faktorial digitnya. Tentu, sebelumnya dibikin dulu nilai faktorial dari 0 sampai 9. Sebenernya agak mubazir juga cara ini, karena hanya 2 angka saja, 145 tadi, dan angka sekitar 40ribuan (hitunglah sendiri, biar seru). Angka 1 dan 2 tidak masuk hitungan, karena bukan hasil penjumlahan faktorial digit.&lt;/p&gt;
+&lt;p&gt;Belakangan saya baru tau, bilangan-bilangan ini disebut &lt;a href=&quot;http://google.com/search?q=factorion&quot;&gt;Factorion&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;(&lt;em&gt;Tulisan ini adalah repost dari blog saya yang &lt;a href=&quot;http://apapun.posterous.com/project-euler-problem-34-factorion&quot;&gt;lama&lt;/a&gt;&lt;/em&gt;)&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>http://wildtype.github.com/jurnal/Project-euler-problem-29</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/Project-euler-problem-29.html"/>
+    <title>Project Euler Problem 29</title>
+    <updated>2011-05-14T00:00:00+07:00</updated>
+    <author>
+      <name>Mufti</name>
+      <uri>http://wildtype.github.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;Problem 29 ini, lagi-lagi bisa selesai dengan jurus asal-paksa, tentu saja dengan bantuan ular &lt;a href=&quot;http://en.wikipedia.org/wiki/Python_(programming_language)&quot;&gt;Python&lt;/a&gt;. Pertanyaannya, ada berapa nilai a^b yang berbeda untuk 2&amp;lt;=a&amp;lt;=100 dan 2&amp;lt;=b&amp;lt;=100? Kemungkinan terbesar cuma 99*99 atau 9801 biji, sedikit itu. Tapi ya jumlahnya nggak sebanyak itu, karena misalnya saja 2^4 sama 4^2 kan ya..&lt;/p&gt;
+&lt;p&gt;Step yang saya kerjakan:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Buat list kosong, list ini untuk menyimpan hasil hitungan a^b.&lt;/li&gt;
+	&lt;li&gt;Hitung a^b untuk a dari 2 sampai 100, masing-masing b dari 2 sampai 100 juga.&lt;/li&gt;
+	&lt;li&gt;Tiap hasil ab tadi, dicek apakah sudah ada di dalam list, kalau belum, masukkan ke dalam list.&lt;/li&gt;
+	&lt;li&gt;Setelah beres, hitung jumlah anggota list.&lt;/li&gt;
+	&lt;li&gt;Beres.&lt;/li&gt;
+&lt;/ol&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>http://wildtype.github.com/jurnal/menjalankan-inkscape-di-slackware</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/inkscape-slackware.html"/>
+    <title>Menjalankan Inkscape di Slackware</title>
+    <updated>2011-01-20T00:00:00+07:00</updated>
+    <author>
+      <name>Mufti</name>
+      <uri>http://wildtype.github.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;Install dulu inkscapenya. Paket lain yang saya install, urut abjad:&lt;br /&gt;
+avahi-0.6.25, cairomm-1.8.4, gc-7.1, glibmm-2.22.2, gnome-vfs-2.24.3,&lt;br /&gt;
+	gsl-1.14, gtkmm-2.18.2, libsigc++-2.2.8, libwpg-0.1.3,&lt;br /&gt;
+	pangomm-2.26.2. Semua paket bisa didownload dari&lt;br /&gt;
+	&lt;a href=&quot;http://repository.slacky.eu/slackware-13.1/&quot;&gt;http://repository.slacky.eu/slackware-13.1/&lt;/a&gt;. Menginstallnya tidak harus urut, installpkg nggak akan ngecek dependensi.&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>http://wildtype.github.com/jurnal/quine1</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/quine-1.html"/>
+    <title>Quine 1</title>
+    <updated>2010-07-12T00:00:00+07:00</updated>
+    <author>
+      <name>Mufti</name>
+      <uri>http://wildtype.github.com/</uri>
+    </author>
+    <content type="html">&lt;script src=&quot;https://gist.github.com/731472.js&quot;&gt; &lt;/script&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>http://wildtype.github.com/jurnal/mengubah-warna-rxvt</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/mengubah-warna-rxvt.html"/>
+    <title>Mengubah Warna Background Rxvt</title>
+    <updated>2009-07-23T00:00:00+07:00</updated>
+    <author>
+      <name>Mufti</name>
+      <uri>http://wildtype.github.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;Ternyata rxvt bisa diatur background dan foreground color nya:&lt;br /&gt;
+!&lt;br /&gt;
+&lt;code&gt;
+$ rxvt -fg white -bg black
+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Sumpah saya baru tau kalo warnanya bisa diubah. Bertahun-tahun(baru 3 taun ding) pake cuma bisa misuhi warna background putih dan terlalu males liat &lt;a href=&quot;http://linux.die.net/man/1/rxvt&quot;&gt;manpage&lt;/a&gt;. Dodol&amp;#8230;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>http://wildtype.github.com/jurnal/tikus-mengancam-petani</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/tikus-mengancam-petani.html"/>
+    <title>Tikus Mengancam Petani</title>
+    <updated>2009-06-25T00:00:00+07:00</updated>
+    <author>
+      <name>Mufti</name>
+      <uri>http://wildtype.github.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/muftisip/3659271685/&quot; title=&quot;photo sharing&quot;&gt;&lt;img src=&quot;http://farm3.static.flickr.com/2474/3659271685_a80af654cd_m.jpg&quot; alt=&quot;&quot; style=&quot;border:solid 2px #000000;&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;font-size:.9em;margin-top:0;&quot;&gt;&lt;a href=&quot;http://www.flickr.com/photos/muftisip/3659271685/&quot;&gt;Tikus mengancam petani&lt;/a&gt; &lt;br /&gt;
+&lt;br /&gt;
+Originally uploaded by &lt;a href=&quot;http://www.flickr.com/people/muftisip/&quot;&gt;muftisip&lt;/a&gt;&lt;br /&gt;
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Di buku bapak saya yang saya lupa apa judulnya, ada ilustrasi petani sedang dikejar tikus gede. Liat aja, saking takutnya sampe paculnya lupa dibawa lari. Karena cuma ilustrasi, pasti ilustratornya memang melebih-lebihkan ukuran si tikus, supaya keliatan tikus itu memang mengancam petani.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Di dunia nyata, dalam makna denotasi &lt;del&gt;-setau saya&lt;/del&gt;- tidak ada tikus yang sebesar itu. Bayangin tikus segede itu, lubang sumur aja kalah sama sama lubang sarangnya. Sepuluh ekor tikus bisa habis hektaran sawah buat makan dari lahir sampe beranak. Kalo dalam makna konotasi, tikus yang lebih gede lagi ada banyak.(mumpung masa pemilu, ngomong ginian)&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>http://wildtype.github.com/jurnal/5000-faktorial</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/5000-faktorial.html"/>
+    <title>5000!</title>
+    <updated>2006-09-30T00:00:00+07:00</updated>
+    <author>
+      <name>Mufti</name>
+      <uri>http://wildtype.github.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;5000! = &lt;br /&gt;
+42285779266055435222010642002335844053907866746266&lt;br /&gt;
+46748849782402181358052708108200690899047871706387&lt;br /&gt;
+53708474665730068544587848606668381273633721089377&lt;br /&gt;
+27876312793903630584621606439044789869822398719297&lt;br /&gt;
+08896211612652968321775500399242196837031469072644&lt;br /&gt;
+72878789790404754884162215226671928410969236910449&lt;br /&gt;
+56597173635294840022384038112064482023085767110450&lt;br /&gt;
+23061748947554283097617817240408053248099278093287&lt;br /&gt;
+84055486199364548291211876258248802189173977900050&lt;br /&gt;
+21321259804363924462646077051135884659510867547058&lt;br /&gt;
+58339246552255890354744359883473831789880346330084&lt;br /&gt;
+58631510209091509935653820010933047965742556741930&lt;br /&gt;
+91705517280520023607508599119763522875590790204336&lt;br /&gt;
+97431235069168312119244959715562674075214621989862&lt;br /&gt;
+33088625998302859864857578749445963115286970886710&lt;br /&gt;
+04626842364817898990545469086139161321834417414880&lt;br /&gt;
+71862344481148312094903611965468727677556178868287&lt;br /&gt;
+20269104814092456410341835975604276458161513178575&lt;br /&gt;
+90166107178254415698088335937272999560337137120047&lt;br /&gt;
+10494376562911424886053352994996423006999722049181&lt;br /&gt;
+20100819059439140675053265004775533850899097945101&lt;br /&gt;
+55109148690700440711957233602624336813233021870928&lt;br /&gt;
+76991968066565697527904222582678415610833764257810&lt;br /&gt;
+32629202687211070274681394351128601502326190649959&lt;br /&gt;
+17189736417637843649121970910984094451489535895910&lt;br /&gt;
+38041769419566578348220717491055127526391483811720&lt;br /&gt;
+52604826965162642710094919393332661030104360530459&lt;br /&gt;
+11701455720958471435372194824668679346737590487226&lt;br /&gt;
+81334102078609036571088063766162497495074131070774&lt;br /&gt;
+01682180585945526445171409277469230062697511346044&lt;br /&gt;
+17456794673582878226162958424867515737917294272417&lt;br /&gt;
+87831054298582451175755118845065744248275746608002&lt;br /&gt;
+38588378492396247368761507015767725898321128632295&lt;br /&gt;
+53704490251638792512759084179174464046691353104734&lt;br /&gt;
+79844649961545955420139963173574763017400367961929&lt;br /&gt;
+19942190762895445656261767041799538161133387312823&lt;br /&gt;
+51153415258130908791588363835166479722591294427065&lt;br /&gt;
+35571425117373238072326329581217979166796923296870&lt;br /&gt;
+96923901003255574789055099807487061047230646195984&lt;br /&gt;
+95523965761220867386651417169930755769189790267515&lt;br /&gt;
+73420758647963453384468350859654907273263219105040&lt;br /&gt;
+64289713096224505162064669468098869917122127404504&lt;br /&gt;
+02068492326624176013291022786668727030528470945252&lt;br /&gt;
+68254966177724996452066998369259106908940826374010&lt;br /&gt;
+43498371591126455822280606361394115344316771769934&lt;br /&gt;
+35366428492829443641476961588199366138825557748770&lt;br /&gt;
+99370045947539078451490344345211745605940399162684&lt;br /&gt;
+44697661821387470705325559577933196460996662145377&lt;br /&gt;
+56493547416970856238921477322286550718249043001618&lt;br /&gt;
+61421927604523076706211429617672747041236161072200&lt;br /&gt;
+09743758647492753665149532164780849075146330071016&lt;br /&gt;
+69131342066288256261828386583698363210876071042751&lt;br /&gt;
+60733483477884147967324270804108607618412818883071&lt;br /&gt;
+15098982135338406610652147087046874760995427473673&lt;br /&gt;
+50945155359976904036735338555105257168265031768240&lt;br /&gt;
+57439934148623923319814325791821933218989404508650&lt;br /&gt;
+13610998098383993110996355981328001049731588596312&lt;br /&gt;
+13185380120504678764291066936560043730563343198487&lt;br /&gt;
+90489985247012933007893445328681566797628804955328&lt;br /&gt;
+46386020133480265279836946393384995675049993707814&lt;br /&gt;
+74656154343893043138423787898184780288600997108869&lt;br /&gt;
+56329883477118631223827859636531151323779313736473&lt;br /&gt;
+97429369411499028751972227999545182615488298951151&lt;br /&gt;
+92668211245135531847220999043535594988729992203506&lt;br /&gt;
+20398160110863762365397821723802378466506736245106&lt;br /&gt;
+35034423187315338308212043804710999419227821039747&lt;br /&gt;
+55271741604389016972396130554937184483611980356589&lt;br /&gt;
+60620250090936643993601720073836133544050943290724&lt;br /&gt;
+76518909502507724675841989412224659392163116352038&lt;br /&gt;
+14736247952853973208930953342191063570280557662972&lt;br /&gt;
+01565565107677808059334536311218295617928876730028&lt;br /&gt;
+02450932122778852968418208261778476955644980385691&lt;br /&gt;
+27578737267804095915871173397110316523267806079812&lt;br /&gt;
+76092461735041201826668742628053852758439791676090&lt;br /&gt;
+07743380748420751185119102921960339376280986753665&lt;br /&gt;
+08521286925532153678793252188257410186613705432897&lt;br /&gt;
+37358627253701785588066398513503869440396049282588&lt;br /&gt;
+20180419178073649693885802597758398892014389747165&lt;br /&gt;
+46597351085260570623440206963706566012953573404358&lt;br /&gt;
+29614734272758056308395106673753492596595185756469&lt;br /&gt;
+39723218275780003250593895303820539697558870511543&lt;br /&gt;
+07392082742244051629970873959976846120624662909811&lt;br /&gt;
+23680125798912848025050940289169597650793954371913&lt;br /&gt;
+11379314427405135599630375642214527294341797246187&lt;br /&gt;
+59796407423914783899354156583471615685849903677305&lt;br /&gt;
+66113538333670875489004130919816763307490415103375&lt;br /&gt;
+97307246885839246941715548295730750618505881581959&lt;br /&gt;
+52899266022562690343957331345066697295211523066869&lt;br /&gt;
+62279209477799743365744726734714089280714112838880&lt;br /&gt;
+82693377378077293104110767513639476200610858040596&lt;br /&gt;
+01963905801576100233746386935222838580143495717812&lt;br /&gt;
+55814458629300424794040657368598620079146045902554&lt;br /&gt;
+13929950088044710384758990326548097338166940500085&lt;br /&gt;
+45272371357139490246382030866854180283831752766806&lt;br /&gt;
+42784895610057558599917189667864491540635700144971&lt;br /&gt;
+94249878920859731254275567514575206399118150736397&lt;br /&gt;
+48310249079384172565342189427676911659815343008463&lt;br /&gt;
+70877695102954151365517346750540152397060425717460&lt;br /&gt;
+01089968440498845985477977905031632568489156557231&lt;br /&gt;
+00649972649872148080018177035770150298300887948724&lt;br /&gt;
+38877188844168330347087232395053776422329440957732&lt;br /&gt;
+19137582371673924704216723002256883135779230394688&lt;br /&gt;
+90066246618253265849072440676702493957969721746748&lt;br /&gt;
+55629981831496656117439976804820941662574638796603&lt;br /&gt;
+05171274925119226367615337524381656217330771650129&lt;br /&gt;
+52098875485646713186260238761996433486796151440832&lt;br /&gt;
+89020610828331808912213258536828564699160079521051&lt;br /&gt;
+66960451695430614212305743006877217407155473217957&lt;br /&gt;
+57701759596764056381272915386751369871239557054235&lt;br /&gt;
+09992286059754699621861955313541321391264366769004&lt;br /&gt;
+65429996811680550737866770665988027062972502001882&lt;br /&gt;
+84588614534436877145536130441446561336909286274827&lt;br /&gt;
+69819468364805509529686817587148599729730823329240&lt;br /&gt;
+94777085275279923304892719633314751563311192746150&lt;br /&gt;
+38921929061678060790138345113706630068437626719988&lt;br /&gt;
+55151436812661373199121032354697867564212106248990&lt;br /&gt;
+05553564022924345831264231038363416781719908354140&lt;br /&gt;
+41171774018595060667419834814334544424719143682822&lt;br /&gt;
+56543800478603905759224170718026706468754542116269&lt;br /&gt;
+58746795398540784464654140381751149965273621123540&lt;br /&gt;
+88016699028014903322513946083266817093071386882654&lt;br /&gt;
+99773742861277894177847526813283718187591036421408&lt;br /&gt;
+81783220739808059714203285309721443041845459183002&lt;br /&gt;
+83340870578313828497328376128618292713674516189736&lt;br /&gt;
+62072373961327909449840141544083040744053930675407&lt;br /&gt;
+67126182547597130843470311389815695365971788564022&lt;br /&gt;
+75067423740032362185009476526752194190124138747827&lt;br /&gt;
+98834264708736168124853844440127725210500722793158&lt;br /&gt;
+53096279121131160167772077952572613800240684421885&lt;br /&gt;
+45353712134190223637968401238525528860718996772569&lt;br /&gt;
+42274333239485950755708390618774501596521844149981&lt;br /&gt;
+55476107548008054192318436948191732631430603548399&lt;br /&gt;
+79078330726763672909098077282735585434803226006747&lt;br /&gt;
+25370977854645677611818073674243673917698637580721&lt;br /&gt;
+45859791485033700592994963793369100283444558089838&lt;br /&gt;
+05401763540373713301931129308095828761210738037480&lt;br /&gt;
+06602697678428883582657374865567858688220151430462&lt;br /&gt;
+49655995760379768685318192365806469199584071845493&lt;br /&gt;
+60692216977613754266223965864498977092147813470912&lt;br /&gt;
+79174608716302208219814346542450657312626830895790&lt;br /&gt;
+31012893360788644107230184805400373136014216229159&lt;br /&gt;
+14699201988414829001441431280090310210783330509023&lt;br /&gt;
+84357267794161772468734115035987000031510928157003&lt;br /&gt;
+31081727415624680432977205070450456683898626301702&lt;br /&gt;
+98930114536447741685673251233037647788174903605257&lt;br /&gt;
+26055206843706161165397551325413693038677832672082&lt;br /&gt;
+27323664249206432363089268768826650939691861683271&lt;br /&gt;
+73975747955299324240618699242036378192948536809803&lt;br /&gt;
+52563310924482152692762191162591458863936770346534&lt;br /&gt;
+80367887126133367116968226450914997055448521259751&lt;br /&gt;
+87008472002567465875240393206104590307003943825201&lt;br /&gt;
+93831024809290196846024721712983216282379946271253&lt;br /&gt;
+66359971898374425099120673688383738299653892030662&lt;br /&gt;
+84307454755907423534527402921160609134632768474952&lt;br /&gt;
+20460104095756073481551016772031875800892244947529&lt;br /&gt;
+22031093841661588823584993931745149914395557357641&lt;br /&gt;
+58418547983170242852396545108752542546477729459523&lt;br /&gt;
+03609464165419977979471368063449159987724091764431&lt;br /&gt;
+37371178542210740572121166868692153240490080384205&lt;br /&gt;
+92119262287544089826147890812369895636708080468762&lt;br /&gt;
+85244998974408556779694569090423405303559435246407&lt;br /&gt;
+51677873953113928698614347227572144946891896093294&lt;br /&gt;
+37547674123490779275433834941232306007876761008994&lt;br /&gt;
+91561269340389211483702171933876178233703589258171&lt;br /&gt;
+12869563450001367619897145400986643461922197676975&lt;br /&gt;
+93001055522519891300212302178083193433088044659295&lt;br /&gt;
+45521659118559392025797811229520653573629144784049&lt;br /&gt;
+46474565003115498072056580360667380889572746464375&lt;br /&gt;
+42805581932229930508928780687453740132710027442831&lt;br /&gt;
+79253550034515366931721120882276039428097886457273&lt;br /&gt;
+06979971285649576934354004030728440581746648376658&lt;br /&gt;
+49803995896424337018345415172028533781090411312446&lt;br /&gt;
+24329033539642966511094828368845801275887012931560&lt;br /&gt;
+99225044518125460113274986014470437757313881001319&lt;br /&gt;
+27612467611661483352893555750310601844978899437827&lt;br /&gt;
+46138546517082416131676814639118700008128451443414&lt;br /&gt;
+06739985430072772303758111613511094355614896323929&lt;br /&gt;
+75084638315293026358253536178483755851966694997225&lt;br /&gt;
+19355159538072078386151421302844500517952397609684&lt;br /&gt;
+33198292598921623223582396390262548856855875458198&lt;br /&gt;
+37155900844786008674594570911812879322822205176750&lt;br /&gt;
+93718661100131936258452234939498295111992808378605&lt;br /&gt;
+23506412769337548130609594264463425077601147334209&lt;br /&gt;
+13912854162818317226214378306296240814939199718752&lt;br /&gt;
+81063673488766784816023427432300271581924041876865&lt;br /&gt;
+45826519361990687336892886715133840245486110982482&lt;br /&gt;
+00448272179949665871225717442904491678119482416563&lt;br /&gt;
+15603034738333176651212180527807959582202983306119&lt;br /&gt;
+45164019413315550379662980215357680731124530585915&lt;br /&gt;
+96970997398805574355008327907184495975235359464435&lt;br /&gt;
+47896803721263445094230702539951028644582374546777&lt;br /&gt;
+61013556916212309752286152053213998745673034127676&lt;br /&gt;
+50336963668230666555205156249113252892615586386850&lt;br /&gt;
+31008491809205076806582659152761637199286942583506&lt;br /&gt;
+04859732273949286080260640627521341007801815105623&lt;br /&gt;
+78792621203942478183343943387720639580111580908419&lt;br /&gt;
+07943201951782357401905465959902896177117761952703&lt;br /&gt;
+54051193727229722248442080440098750369411277686593&lt;br /&gt;
+02213301062503186208514507642105298050883719798605&lt;br /&gt;
+25577503039496061584428388468661375109684415673098&lt;br /&gt;
+38079394349570013029265177957120625555851951313574&lt;br /&gt;
+02989758928347552533440985891140069444930843287400&lt;br /&gt;
+50155543325877938950802411285387587259451364008383&lt;br /&gt;
+24944471346436826148195406004114845870234072926697&lt;br /&gt;
+74063132587863479066769826618150125611769227571529&lt;br /&gt;
+12491648217023728844163576009968511009394114446776&lt;br /&gt;
+28186007072278522314941048564396255796808221289935&lt;br /&gt;
+79926220855388922116476522085036770647649149613378&lt;br /&gt;
+93537615373915691778222377448376141202533426225080&lt;br /&gt;
+07300513473422771427333106345971803240244226950458&lt;br /&gt;
+09053932668910361938199883884403623179528243549536&lt;br /&gt;
+24896707341559480676885153210730644760778596286278&lt;br /&gt;
+52283657244564306449096277517172656954238392941958&lt;br /&gt;
+40952725328165957253453142838962989400588653948682&lt;br /&gt;
+41171139296273569389734829358546502786894370147983&lt;br /&gt;
+83826002058208853517073216288725214522205265969614&lt;br /&gt;
+96214788484012900450773725242460507433966081818296&lt;br /&gt;
+02960191963141249985384220176951103613805617010163&lt;br /&gt;
+57743542531148669369994130940908368220071936435111&lt;br /&gt;
+97859278249349147705218722654610919959726943915240&lt;br /&gt;
+04679011736025210300518860803370848401148102463512&lt;br /&gt;
+88263986170081804888380750203521448348740849154718&lt;br /&gt;
+71447885780957451549950500507078942884288841002787&lt;br /&gt;
+77774559811323199406241765321486863165817367744100&lt;br /&gt;
+84063436959989519288310869124517866342559353458242&lt;br /&gt;
+58941139051646944037756266582157784593682990967975&lt;br /&gt;
+45483505104736337708391510338546396027534864016352&lt;br /&gt;
+04633884342346714935641429160856846724874244782055&lt;br /&gt;
+11375916823647229779361297108030253093447811552773&lt;br /&gt;
+75404589689903548080583093812673235935630985465643&lt;br /&gt;
+76209385371052808344607189076003388781618019853273&lt;br /&gt;
+75949856691670470344843836350341636832526640322417&lt;br /&gt;
+45194766781404283193274828518821403443193844454754&lt;br /&gt;
+56765253419659194332132585432270070759038565239668&lt;br /&gt;
+22717130000918912205084518526151462793771759752885&lt;br /&gt;
+29786379317112125295294433237579100729090017035587&lt;br /&gt;
+63798612480281463093944391916950129336315045285163&lt;br /&gt;
+53931286858642743729610944610123560487743986329961&lt;br /&gt;
+18997559659966087490492711676852686753359912975832&lt;br /&gt;
+09089553296409523640116060078495005377892783750147&lt;br /&gt;
+34412212377790772713414664740448983758948767542329&lt;br /&gt;
+45468993542203416699613666989765299785807958990558&lt;br /&gt;
+64050388507083137333076839766882463680992355219727&lt;br /&gt;
+24183173512764618911238048588311556947788810175970&lt;br /&gt;
+89776821496443403179244430851703036922141376211943&lt;br /&gt;
+88641989508360339306459037361842937028710758321966&lt;br /&gt;
+60754611376107636254392861431624289075402108223362&lt;br /&gt;
+00123093847373122203742690338385799286785729394341&lt;br /&gt;
+68287053763374091938184632261131740934278117918891&lt;br /&gt;
+64244751354347844604054945537983455616335381586844&lt;br /&gt;
+16920545186989194341753866639003357567656032643637&lt;br /&gt;
+67906721626620330878425545157208117246381251512669&lt;br /&gt;
+84668588720901314486163256046101951337181458524998&lt;br /&gt;
+81766299251421450147102061931903736713803476634310&lt;br /&gt;
+29705222414785030188275106347446241258707937339085&lt;br /&gt;
+09575772431673506688509420876153616444044375586016&lt;br /&gt;
+06258370913005741620652736709418886679645705507447&lt;br /&gt;
+24714137001968165215954380698515999483361357521322&lt;br /&gt;
+10613188477192664194239535141223354674646149174301&lt;br /&gt;
+34758660373381765326045574029254722793602889261893&lt;br /&gt;
+85899695656876783017186873988763887625972743976062&lt;br /&gt;
+81326344664767941367972618493339507466582044167798&lt;br /&gt;
+98066042039371166663366962825693490973483911558690&lt;br /&gt;
+04856032512219241534268522369316036765491047702733&lt;br /&gt;
+52154014316833887296840544329696768403607318243533&lt;br /&gt;
+62248654338235981235441675146083407811666618587817&lt;br /&gt;
+33980624199254577853462678039039937557802759942957&lt;br /&gt;
+20528104377566697939683810934111895947576622019121&lt;br /&gt;
+75350936389854652830786923706625123236843902355876&lt;br /&gt;
+36228324657161183714078807661162179517887972801841&lt;br /&gt;
+57201963908440026903745038119279717031448987181503&lt;br /&gt;
+13199921115639083030172880126106420620053592402782&lt;br /&gt;
+77393918026391717720136125984776933980647063763022&lt;br /&gt;
+60888535993759507908878908179180219576803338196860&lt;br /&gt;
+51204871076108748984115687401599530206390981389932&lt;br /&gt;
+61095538868264084012160831040525974539251576403732&lt;br /&gt;
+88908673694836640473462270856004089161078222194340&lt;br /&gt;
+51797945501553476829668553200975019055814199145911&lt;br /&gt;
+24181501062255627411231571377358697194374130822027&lt;br /&gt;
+38384381594063857138791333759236233044045348723304&lt;br /&gt;
+72406687841333330478989952552214688479738135680839&lt;br /&gt;
+95644533005222551320155267768895412770329278670827&lt;br /&gt;
+49004117207666311278363815234354768166312118908686&lt;br /&gt;
+49913802362817752759460612118133420547918016192203&lt;br /&gt;
+46912760381900528012343973598270461499814511324618&lt;br /&gt;
+19565852823204465827008206493468025155651127282208&lt;br /&gt;
+38115631922565099452012226666032260593962470197076&lt;br /&gt;
+68580396286975551115189973049085051758765306785758&lt;br /&gt;
+00066042406689417062030384678586025737063435259958&lt;br /&gt;
+68850886796540044651877902089429351532173167501137&lt;br /&gt;
+38031466034642429489076322228133763299919641336502&lt;br /&gt;
+02862728926808756003661377060746357551507908798209&lt;br /&gt;
+97226601304729078257469081754519524055737913131131&lt;br /&gt;
+70617323191598673971588373108168916968657704150695&lt;br /&gt;
+51294765238613481576696758036476200528906022274453&lt;br /&gt;
+17443054984028630488508695577615286503260809411606&lt;br /&gt;
+88570698894762046478500884303973107412774191961697&lt;br /&gt;
+45051711032908281520127388866342263149214709022001&lt;br /&gt;
+69406365048120470360167386022906716298164111982022&lt;br /&gt;
+68607961324739550057567564568204754619040423011062&lt;br /&gt;
+37136739599567894088470597685951450501724151774601&lt;br /&gt;
+73514309909726155093783347200000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000000000000000000000000000&lt;br /&gt;
+00000000000000000000000000&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>http://wildtype.github.com/jurnal/hd-baru</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/hd-baru-nih.html"/>
+    <title>HD Baru nih</title>
+    <updated>2006-09-17T00:00:00+07:00</updated>
+    <author>
+      <name>Mufti</name>
+      <uri>http://wildtype.github.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;Kemarin pulang sekolah mampir dulu ke Jogjakomtek di &lt;span class=&quot;caps&quot;&gt;JEC&lt;/span&gt;. Liat-liat, katanya dijual murah semua sampe2 iklannya gambar orang pake &amp;#8216;kathok mlotrok&amp;#8217; (njijiki bgt). Karena harddisk komputer di rumah wis penyakitan, sering mati dhewe, ya udah beli HD Seagate yang 80Gb. Harganya &amp;#8220;ming&amp;#8221; Rp 398.025 (semono ming?). Nggak ngerti semono ki murah po ora. Mbuh, aku ra tau tuku2 periferal komputer. Cuma mumpung liat pameran. Mampir ke standnya printer HP, tanya harga Kartrid printer, e ra ono. Yo wis bali wae.&lt;/p&gt;
+&lt;p&gt;Sampe rumah terus hardisk dipasang, dipartisi, diinstall &lt;a href=&quot;http://www.slackware.com&quot;&gt;Slackware&lt;/a&gt;. Karena males pilih paket satu2 ya udah diinstall full, yang nggak perlu ikut diinstall juga.&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>http://wildtype.github.com./posting-tangga-1-januari-1970</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.compostingan-1-januari-1970.html"/>
+    <title>Posting tanggal 1 Januari 1970</title>
+    <updated>2006-08-31T00:00:00+07:00</updated>
+    <author>
+      <name>Mufti</name>
+      <uri>http://wildtype.github.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;Barusan bikin posting, time stampnya tercatat 1970-01-01. kok bisa ya?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/gambar/aneh1.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Sebenernya Wordpress nyimpen data postinga di file atau 100% database ya? Kalau bikin scripting yang manggil fungsi untuk akses timestamp file, sementara file itu nggak ada return valuenya 1970-01-01. Apa iya wordpress nyimpan posting dalam file teks? Waktu bikin posting memang browsernya sempat saya stop. (Ada hubungannya ? :P )&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>http://wildtype.github.com/jurnal/visualboyadvance-linux</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/visualboyadvance-linux.html"/>
+    <title>VisualBoyAdvance for Linux</title>
+    <updated>2006-08-28T00:00:00+07:00</updated>
+    <author>
+      <name>Mufti</name>
+      <uri>http://wildtype.github.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;Beberapa hari ini saya jadi suka main GameBoy pake emulator &lt;span class=&quot;caps&quot;&gt;VBA&lt;/span&gt;. Dulu nggak suka sama sekali, tapi karena ikut pembinaan utk &lt;span class=&quot;caps&quot;&gt;OSN&lt;/span&gt; Komputer, jadi ketularan temen2 yang semuanya suka main GameBoy. Biasanya kalau sedang ditinggal pengajar atau udah judes mikir penyelesaian soal, pada main GB. Aku ikut2an aja main. Karena di rumah saya lebih sering pake  Slackware, tadi siang iseng cari &lt;span class=&quot;caps&quot;&gt;VBA&lt;/span&gt; untuk linux. Di websitenya &lt;span class=&quot;caps&quot;&gt;VBA&lt;/span&gt; ketemu paket tarball untuk linux, ya udah download. Cuma 243an Kilobyte, tak pikir isinya source. Habis ekstrak, tak jalanin &amp;#8216;make&amp;#8217; malah keluar &lt;em&gt;&amp;#8216;make: &lt;strong&gt;*&lt;/strong&gt; No targets specified and no makefile found. Stop.&amp;#8217;&lt;/em&gt; . Lho? Setelah diliat ternyata isinya file binarynya &lt;span class=&quot;caps&quot;&gt;VBA&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Ya sudah, file yang namanya VisualBoyAdvance dikopi ke /usr/bin terus dibuat softlink jadi vba. Waktu merun vba, malah keluar opsi yang banyak banget. Tak kiro koyo VisualBoyAdvance nggo Windows sing ana main menune ning main window :-). Ternyata harus masukkan nama file rom &amp;amp; opsi lewat terminal. Waktu coba main &amp;#8220;One Piece&amp;#8221;, kok cepet bgt? Throttle nya sampe 500%. Opsinya tak coba satu2, pake opsi -no-throttle nggak terlalu membantu. Kecepatannya turun tapi masih 200an persen.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/gambar/scr-vba2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Terus coba lagi, throttlenya 100%, malah lelet bgt, suarane ora karuan. Coba lagi throttlenya 150%, akhirnya pas.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/gambar/scr-vba3.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+Asiiik.&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <id>http://wildtype.github.com/jurnal/banjir</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/banjir.html"/>
+    <title>Banjir</title>
+    <updated>2006-04-05T00:00:00+07:00</updated>
+    <author>
+      <name>Mufti</name>
+      <uri>http://wildtype.github.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;Kemaren senen tanggal 3 april, habis ujian blok fisika, sambil maem &amp;amp;&lt;br /&gt;
+nunggu komputer selese loding aku nyetel tipi. lama ga nonton berita&lt;br /&gt;
+njut nonton. beritanya wangun! di eropa ada banjir di berbage negara!!!!&lt;br /&gt;
+masak di jerman &amp;amp; kalo nggak salah ukraina yang ngungsi sampai 2,5 juta.&lt;br /&gt;
+indonesia yang banjirnya sering &amp;amp; pasti ada kalah. sampe sekarang&lt;br /&gt;
+katanya masih banjir.&lt;/p&gt;</content>
+  </entry>
+  
+ 
 </feed>
