@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://wildtype.github.com</id>
+    <title>Wildtype</title>
+    <link href="http://wildtype.github.com/atom.xml" rel="self" />
+    <link href="http://wildtype.github.com/" />
+    
+{% for post in site.posts offset:0 limit: 5 %}
+<entry>
+	<title>{{ post.title }}</title>
+	<author>
+		<name>Mufti</name>
+	</author>
+   <link href="{{ post.url }}" type="text/html" />
+   <id>{{ post.url }}</id>
+   <updated>{{ post.date | date_to_long_string }}</updated>
+	<content type="html"><![CDATA[
+{{ post.content }
+    ]]></content>
+</entry>
+{% endfor %}
+</feed>
