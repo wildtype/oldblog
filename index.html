@@ -12,7 +12,7 @@
 			#content>header{ margin:20px; }
 			header>h1{ text-align:center; }
 			header>h1>a, header>h1>a:hover{ text-decoration:none; color:#000; text-shadow:2px 2px #ddf; font:36px/36px 'Lemon', serif; letter-spacing:-4px;}
-			nav{ font:18px/30px 'Cambo', serif; line-height:30px; min-height:80px; padding-top:8px; color:#fff; margin-left:-24px; margin-right:-23px; width:700px; background:url(/gambar/navbar.png) 0 0 no-repeat; text-shadow:0 1px #000; text-align:center; clear:both;  margin-bottom:-26px;}
+			nav{ font:18px/30px 'Cambo', serif; line-height:30px; min-height:80px; padding-top:8px; color:#fff; margin-left:-24px; margin-right:-24px; width:700px; background:url(/gambar/navbar.png) 0 0 no-repeat; text-shadow:0 1px #000; text-align:center; clear:both;  margin-bottom:-26px;}
 			nav li{ list-style-type:none; margin-right:2em; display:inline; }
 			nav a, nav a:visited, nav a:hover{ color:#fff; text-decoration:none; }
 			#content>footer{background-color:#000; line-height:30px; font-size:13px; padding-left:10px; margin:-1px; color:#fff; }
@@ -22,7 +22,8 @@
 			p{margin-bottom:1em; }
 			.nothing{ display:none; }
 			hr.sep{ line-height:30px; margin-bottom:1.6em; height:30px; border:none; content:' '; background:url(/gambar/hr.png) top center no-repeat; }
-			article>footer{ text-align:right; font-size:13px; }
+			article>footer{ font-size:13px; }
+			article>footer>span.posted{text-align:right;}
 			article>ol, article>ul{ padding-left:3em; }
 			aside{ margin:30px; border: 1px solid #ccc; padding:20px; background-color:#eee; text-align:center; font-size:13px; }
 			aside ul{ margin:auto; width:160px; }
@@ -39,6 +40,7 @@
 			li.feed a{ background-position: -32px 0px; }
 			li.feed a:hover{ background-position: 0px 0px; }
 		</style>
+		<link href='http://fonts.googleapis.com/css?family=Lemon|Telex|Cambo|PT+Serif+Caption' rel='stylesheet' type='text/css'>
 		<link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed" />
 	</head>
 	
@@ -62,55 +64,55 @@
 			
 <article>
 	<header>
-		<h2><a href="/jurnal/flashdisk.html">Modem + Microsd = flashdisk</a></h2>
+		<h2><a href="/blog/201219.html">Modem + Microsd = flashdisk</a></h2>
 	</header>
 	<p><a href="http://www.flickr.com/photos/muftisip/6660704373/"
 title="DSCF0991 by muftisip, on Flickr"><img
 src="http://farm8.staticflickr.com/7147/6660704373_7295ec1115_m.jpg"
 width="240" height="180" alt="DSCF0991" align="left"></a><br />
 Saya tidak punya flashdisk. Flashdisk yang 256mb kapasitasnya itu entah. Mungkin tertinggal di rumah sana. Biasanya pakai hardisk, tapi tukang print di pinggir jalan dekat kampus itu sering malas nancepin ke belakang PC. Biasanya, hardisk eksternal butuh power lebih &amp; nggak kuat kalau ditancep di port <span class="caps">USB</span> depan. Jadilah pakai memory card dari henpon &amp; modem 3g kalau mau ngeprin.</p>
-	<footer><span class="posted">09 Jan 2012 | <a href="/jurnal/flashdisk.html#disqus_thread">Komentar</a></span></footer>
+	<footer><span class="posted">09 Jan 2012 | <a href="/blog/201219.html#disqus_thread">Komentar</a></span></footer>
 </article>
 <hr class="sep" />
 
 <article>
 	<header>
-		<h2><a href="/jurnal/like-a-boss.html">Pindahan ke Github</a></h2>
+		<h2><a href="/blog/20111031.html">Pindahan ke Github</a></h2>
 	</header>
 	<p style="text-align:center;"><img src="/gambar/boss.gif" title="like a boss" alt="like a boss" /></p>
 <p>Asik jadi juga halaman blog ini, dibuat pake jekyll &amp; dipublish lewat github. Desainnya seenak perut, itu logo niatnya gambar <em>Drosophila melanogaster</em> wildtype, tapi ya jadinya gitu lah, geleh. Halaman lain nanti saja dibikin, sekalian mindah postingan dari blog lama ke sini.</p>
-	<footer><span class="posted">31 Oct 2011 | <a href="/jurnal/like-a-boss.html#disqus_thread">Komentar</a></span></footer>
+	<footer><span class="posted">31 Oct 2011 | <a href="/blog/20111031.html#disqus_thread">Komentar</a></span></footer>
 </article>
 <hr class="sep" />
 
 <article>
 	<header>
-		<h2><a href="/jurnal/project-euler-problem-53.html">Project Euler Problem 53</a></h2>
+		<h2><a href="/blog/peuler53.html">Project Euler Problem 53</a></h2>
 	</header>
 	<p>Problem ini ternyata bisa diselesaikan pake jurus brutal alias bruteforce. Inti persoalannya, mencari jumlah <sup>n</sup> C <sub>r</sub> yang pertama kali nilainya lebih besar dari sejuta untuk 1&lt;=n&lt;=100. Yah kita tau kalau <sup>n</sup> C <sub>r</sub> itu maksudnya kombinasi r elemen dari set yang jumlahnya n. Di soalnya juga ada rumus carinya. Karena n antara 1 sampai 100 dan r lebih kecil samadengan 100, jadi cuma ada 10000 kemungkinan kombinasi. Pake python, sedikit itu. Python juga bisa menghitung angka besar tanpa perlu kode aneh-aneh, jadi, ya itu tadi, bisa diselesaikan dengan bruteforce.</p>
 <p>Cara saya, bikin dulu list faktorial 1 sampai 100. Pake cara apa itu namanya, dynamic programming mungkin, gak ngertilah. Tinggal dikali-kali saja listnya, jadi. Step berikutnya, iterasi n 1 sampai 100, iterasi r 1 sampai n, hitung <sup>n</sup> C <sub>r</sub>. Tiap nilainya lebih dari 1000000, dihitung. Beres.</p>
 <p>Ah, kebanyakan bikin laporan, jadi aneh gini nulis blog.</p>
 <p>(<em>Tulisan ini adalah repost dari blog saya yang <a href="http://apapun.posterous.com/project-euler-problem-53">lama</a></em>)</p>
-	<footer><span class="posted">14 May 2011 | <a href="/jurnal/project-euler-problem-53.html#disqus_thread">Komentar</a></span></footer>
+	<footer><span class="posted">14 May 2011 | <a href="/blog/peuler53.html#disqus_thread">Komentar</a></span></footer>
 </article>
 <hr class="sep" />
 
 <article>
 	<header>
-		<h2><a href="/jurnal/project-euler-problem-34.html">Project Euler Problem 34, Factorion</a></h2>
+		<h2><a href="/blog/peuler34.html">Project Euler Problem 34, Factorion</a></h2>
 	</header>
 	<p>Pendahuluannya 145, digitnya 1,4,5. Nah 1! + 4! + 5! = 1+24+120 = 145. Rumusan masalahnya, Berapa jumlah semua bilangan yang nilainya sama dengan jumlah faktorial digitnya, seperti 145 itu?</p>
 <p>Sebenernya ini apa ya sebutannya? Brute force juga lah. Karena digit itu antara 0 sampai 9, jadi kira-kira maksimum bilangannya kurang dari 9 faktorial, 362880. Pembuktiannya, nggak ngerti saya. Itu sebenernya ngasal aja, hehe, kebetulan bener.</p>
 <p>Jadi stepnya dari 362880 sampai 1, dihitung tiap bilangan apakah sama dengan jumlah faktorial digitnya. Tentu, sebelumnya dibikin dulu nilai faktorial dari 0 sampai 9. Sebenernya agak mubazir juga cara ini, karena hanya 2 angka saja, 145 tadi, dan angka sekitar 40ribuan (hitunglah sendiri, biar seru). Angka 1 dan 2 tidak masuk hitungan, karena bukan hasil penjumlahan faktorial digit.</p>
 <p>Belakangan saya baru tau, bilangan-bilangan ini disebut <a href="http://google.com/search?q=factorion">Factorion</a>.</p>
 <p>(<em>Tulisan ini adalah repost dari blog saya yang <a href="http://apapun.posterous.com/project-euler-problem-34-factorion">lama</a></em>)</p>
-	<footer><span class="posted">14 May 2011 | <a href="/jurnal/project-euler-problem-34.html#disqus_thread">Komentar</a></span></footer>
+	<footer><span class="posted">14 May 2011 | <a href="/blog/peuler34.html#disqus_thread">Komentar</a></span></footer>
 </article>
 <hr class="sep" />
 
 <article>
 	<header>
-		<h2><a href="/jurnal/Project-euler-problem-29.html">Project Euler Problem 29</a></h2>
+		<h2><a href="/blog/peuler29.html">Project Euler Problem 29</a></h2>
 	</header>
 	<p>Problem 29 ini, lagi-lagi bisa selesai dengan jurus asal-paksa, tentu saja dengan bantuan ular <a href="http://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>. Pertanyaannya, ada berapa nilai a^b yang berbeda untuk 2&lt;=a&lt;=100 dan 2&lt;=b&lt;=100? Kemungkinan terbesar cuma 99*99 atau 9801 biji, sedikit itu. Tapi ya jumlahnya nggak sebanyak itu, karena misalnya saja 2^4 sama 4^2 kan ya..</p>
 <p>Step yang saya kerjakan:</p>
@@ -121,7 +123,7 @@ Saya tidak punya flashdisk. Flashdisk yang 256mb kapasitasnya itu entah. Mungkin
 	<li>Setelah beres, hitung jumlah anggota list.</li>
 	<li>Beres.</li>
 </ol>
-	<footer><span class="posted">14 May 2011 | <a href="/jurnal/Project-euler-problem-29.html#disqus_thread">Komentar</a></span></footer>
+	<footer><span class="posted">14 May 2011 | <a href="/blog/peuler29.html#disqus_thread">Komentar</a></span></footer>
 </article>
 <hr class="sep" />
 
@@ -141,6 +143,6 @@ Mau <a href="/arsip.html">lihat semua tulisan</a>, atau <a href="#top">kembali k
 					Ditulis dengan vim, dipublish dengan jekyll dan github
 				</footer>
 		</div>
-	<script type="text/javascript"> WebFontConfig={google:{families:['PT+Serif+Caption::latin','Lemon::latin','Telex::latin','Cambo::latin']}};(function(){var wf=document.createElement('script');wf.src=('https:'==document.location.protocol?'https':'http')+'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';wf.type='text/javascript';wf.async='true';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(wf,s)})();</script>
+	<!--<script type="text/javascript"> WebFontConfig={google:{families:['PT+Serif+Caption::latin','Lemon::latin','Telex::latin','Cambo::latin']}};(function(){var wf=document.createElement('script');wf.src=('https:'==document.location.protocol?'https':'http')+'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';wf.type='text/javascript';wf.async='true';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(wf,s)})();</script>-->
 	</body>
 </html>

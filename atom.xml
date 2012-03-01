@@ -4,7 +4,7 @@
   <title>Wiltype</title>
   <link href="http://wildtype.github.com/"/>
   <link type="application/atom+xml" rel="self" href="http://wildtype.github.com/atom.xml"/>
-  <updated>2012-02-17T02:36:32+07:00</updated>
+  <updated>2012-03-02T01:34:38+07:00</updated>
   <id>http://wildtype.github.com/</id>
   <author>
     <name>Mufti</name>
@@ -13,8 +13,8 @@
 
   
   <entry>
-    <id>http://wildtype.github.com/jurnal/flashdisk</id>
-    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/flashdisk.html"/>
+    <id>http://wildtype.github.com/blog/flashdisk</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/blog/201219.html"/>
     <title>Modem + Microsd = flashdisk</title>
     <updated>2012-01-09T00:00:00+07:00</updated>
     <author>
@@ -29,8 +29,8 @@ Saya tidak punya flashdisk. Flashdisk yang 256mb kapasitasnya itu entah. Mungkin
   </entry>
   
   <entry>
-    <id>http://wildtype.github.com/jurnal/blog-like-a-boss</id>
-    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/like-a-boss.html"/>
+    <id>http://wildtype.github.com/blog/blog-like-a-boss</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/blog/20111031.html"/>
     <title>Pindahan ke Github</title>
     <updated>2011-10-31T00:00:00+07:00</updated>
     <author>
@@ -42,8 +42,8 @@ Saya tidak punya flashdisk. Flashdisk yang 256mb kapasitasnya itu entah. Mungkin
   </entry>
   
   <entry>
-    <id>http://wildtype.github.com/jurnal/project-euler-problem-53</id>
-    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/project-euler-problem-53.html"/>
+    <id>http://wildtype.github.com/blog/project-euler-problem-53</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/blog/peuler53.html"/>
     <title>Project Euler Problem 53</title>
     <updated>2011-05-14T00:00:00+07:00</updated>
     <author>
@@ -57,8 +57,8 @@ Saya tidak punya flashdisk. Flashdisk yang 256mb kapasitasnya itu entah. Mungkin
   </entry>
   
   <entry>
-    <id>http://wildtype.github.com/jurnal/project-euler-problem-34</id>
-    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/project-euler-problem-34.html"/>
+    <id>http://wildtype.github.com/blog/project-euler-problem-34</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/blog/peuler34.html"/>
     <title>Project Euler Problem 34, Factorion</title>
     <updated>2011-05-14T00:00:00+07:00</updated>
     <author>
@@ -73,8 +73,8 @@ Saya tidak punya flashdisk. Flashdisk yang 256mb kapasitasnya itu entah. Mungkin
   </entry>
   
   <entry>
-    <id>http://wildtype.github.com/jurnal/Project-euler-problem-29</id>
-    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/Project-euler-problem-29.html"/>
+    <id>http://wildtype.github.com/blog/Project-euler-problem-29</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/blog/peuler29.html"/>
     <title>Project Euler Problem 29</title>
     <updated>2011-05-14T00:00:00+07:00</updated>
     <author>
@@ -93,8 +93,8 @@ Saya tidak punya flashdisk. Flashdisk yang 256mb kapasitasnya itu entah. Mungkin
   </entry>
   
   <entry>
-    <id>http://wildtype.github.com/jurnal/menjalankan-inkscape-di-slackware</id>
-    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/inkscape-slackware.html"/>
+    <id>http://wildtype.github.com/blog/menjalankan-inkscape-di-slackware</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/blog/2011120.html"/>
     <title>Menjalankan Inkscape di Slackware</title>
     <updated>2011-01-20T00:00:00+07:00</updated>
     <author>
@@ -109,8 +109,8 @@ avahi-0.6.25, cairomm-1.8.4, gc-7.1, glibmm-2.22.2, gnome-vfs-2.24.3,&lt;br /&gt
   </entry>
   
   <entry>
-    <id>http://wildtype.github.com/jurnal/quine1</id>
-    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/quine-1.html"/>
+    <id>http://wildtype.github.com/blog/quine1</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/blog/2010712.html"/>
     <title>Quine 1</title>
     <updated>2010-07-12T00:00:00+07:00</updated>
     <author>
@@ -121,8 +121,8 @@ avahi-0.6.25, cairomm-1.8.4, gc-7.1, glibmm-2.22.2, gnome-vfs-2.24.3,&lt;br /&gt
   </entry>
   
   <entry>
-    <id>http://wildtype.github.com/jurnal/mengubah-warna-rxvt</id>
-    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/mengubah-warna-rxvt.html"/>
+    <id>http://wildtype.github.com/blog/mengubah-warna-rxvt</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/blog/2009723.html"/>
     <title>Mengubah Warna Background Rxvt</title>
     <updated>2009-07-23T00:00:00+07:00</updated>
     <author>
@@ -138,8 +138,8 @@ $ rxvt -fg white -bg black
   </entry>
   
   <entry>
-    <id>http://wildtype.github.com/jurnal/tikus-mengancam-petani</id>
-    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/tikus-mengancam-petani.html"/>
+    <id>http://wildtype.github.com/blog/tikus-mengancam-petani</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/blog/2009625.html"/>
     <title>Tikus Mengancam Petani</title>
     <updated>2009-06-25T00:00:00+07:00</updated>
     <author>
@@ -157,8 +157,8 @@ Originally uploaded by &lt;a href=&quot;http://www.flickr.com/people/muftisip/&q
   </entry>
   
   <entry>
-    <id>http://wildtype.github.com/jurnal/5000-faktorial</id>
-    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/5000-faktorial.html"/>
+    <id>http://wildtype.github.com/blog/5000-faktorial</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/blog/2006930.html"/>
     <title>5000!</title>
     <updated>2006-09-30T00:00:00+07:00</updated>
     <author>
@@ -496,8 +496,8 @@ Originally uploaded by &lt;a href=&quot;http://www.flickr.com/people/muftisip/&q
   </entry>
   
   <entry>
-    <id>http://wildtype.github.com/jurnal/hd-baru</id>
-    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/hd-baru-nih.html"/>
+    <id>http://wildtype.github.com/blog/hd-baru</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/blog/2006917.html"/>
     <title>HD Baru nih</title>
     <updated>2006-09-17T00:00:00+07:00</updated>
     <author>
@@ -509,8 +509,8 @@ Originally uploaded by &lt;a href=&quot;http://www.flickr.com/people/muftisip/&q
   </entry>
   
   <entry>
-    <id>http://wildtype.github.com./posting-tangga-1-januari-1970</id>
-    <link type="text/html" rel="alternate" href="http://wildtype.github.compostingan-1-januari-1970.html"/>
+    <id>http://wildtype.github.com/blog/posting-tangga-1-januari-1970</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/blog/2006831.html"/>
     <title>Posting tanggal 1 Januari 1970</title>
     <updated>2006-08-31T00:00:00+07:00</updated>
     <author>
@@ -523,8 +523,8 @@ Originally uploaded by &lt;a href=&quot;http://www.flickr.com/people/muftisip/&q
   </entry>
   
   <entry>
-    <id>http://wildtype.github.com/jurnal/visualboyadvance-linux</id>
-    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/visualboyadvance-linux.html"/>
+    <id>http://wildtype.github.com/blog/visualboyadvance-linux</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/blog/2006828.html"/>
     <title>VisualBoyAdvance for Linux</title>
     <updated>2006-08-28T00:00:00+07:00</updated>
     <author>
@@ -540,8 +540,8 @@ Asiiik.&lt;/p&gt;</content>
   </entry>
   
   <entry>
-    <id>http://wildtype.github.com/jurnal/banjir</id>
-    <link type="text/html" rel="alternate" href="http://wildtype.github.com/jurnal/banjir.html"/>
+    <id>http://wildtype.github.com/blog/banjir</id>
+    <link type="text/html" rel="alternate" href="http://wildtype.github.com/blog/200645.html"/>
     <title>Banjir</title>
     <updated>2006-04-05T00:00:00+07:00</updated>
     <author>
