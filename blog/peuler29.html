@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Wildtype - Project Euler Problem 29</title>
+		<style>
+			*{padding:0;margin:0;}
+			body{ background:#ddd url(/gambar/silang.png) repeat; font:16px/1.6 'Telex', Helvetica, sans-serif; color:#222; }
+			.clr{ clear:both; }
+			a,a:visited{ color:#000; text-decoration:underline; }
+			a:hover{ text-decoration:none; color:#009; text-decoration:none; }
+			#content{ width:652px; margin:30px auto 0px auto; box-shadow: 0px 0px 2px 2px #ccc; border:1px solid #fff; border-radius:5px; background:#fff; overflow:visible;}
+			#content>header{ margin:20px; }
+			header>h1{ text-align:center; }
+			header>h1>a, header>h1>a:hover{ text-decoration:none; color:#000; text-shadow:2px 2px #ddf; font:36px/36px 'Lemon', serif; letter-spacing:-4px;}
+			nav{ font:18px/30px 'Cambo', serif; line-height:30px; min-height:80px; padding-top:8px; color:#fff; margin-left:-24px; margin-right:-24px; width:700px; background:url(/gambar/navbar.png) 0 0 no-repeat; text-shadow:0 1px #000; text-align:center; clear:both;  margin-bottom:-26px;}
+			nav li{ list-style-type:none; margin-right:2em; display:inline; }
+			nav a, nav a:visited, nav a:hover{ color:#fff; text-decoration:none; }
+			#content>footer{background-color:#000; line-height:30px; font-size:13px; padding-left:10px; margin:-1px; color:#fff; }
+			h2, h3, h4, h5{ font-family:'PT Serif Caption', serif; }
+			article{ margin:30px; margin-top:0; }
+			article>header h2 a, article>header h2 a:visited, article>header h2 a:hover{ color:#000099; text-shadow: 1px 1px #777; text-decoration:none; font-size:28px; }
+			p{margin-bottom:1em; }
+			.nothing{ display:none; }
+			hr.sep{ line-height:30px; margin-bottom:1.6em; height:30px; border:none; content:' '; background:url(/gambar/hr.png) top center no-repeat; }
+			article>footer{ font-size:13px; }
+			article>footer>span.posted{text-align:right;}
+			article>ol, article>ul{ padding-left:3em; }
+			aside{ margin:30px; border: 1px solid #ccc; padding:20px; background-color:#eee; text-align:center; font-size:13px; }
+			aside ul{ margin:auto; width:160px; }
+			aside li{ display:inline; list-style-type:none; text-indent: -9999px; }
+			aside li a{ float:left; display:block; width:32px; height:32px; background:url(/gambar/bgsocial.png) no-repeat; }
+			li.flickr a{ background-position: -32px -32px; }
+			li.flickr a:hover{ background-position:0px -32px; }
+			li.last a{ background-position: -32px -64px; }
+			li.last a:hover{ background-position: 0px -64px; }
+			li.twitter a{ background-position: -32px -96px; }
+			li.twitter a:hover{ background-position: 0px -96px; }
+			li.facebook a{ background-position: -32px -128px; }
+			li.facebook a:hover{ background-position: 0px -128px; }
+			li.feed a{ background-position: -32px 0px; }
+			li.feed a:hover{ background-position: 0px 0px; }
+		</style>
+		<link href='http://fonts.googleapis.com/css?family=Lemon|Telex|Cambo|PT+Serif+Caption' rel='stylesheet' type='text/css'>
+		<link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed" />
+	</head>
+	
+	<body>
+		<div id="content">
+			<header id="top">
+				<h1><a href="http://wildtype.github.com">Wildtype</a></h1>
+			</header>
+			
+			<nav>
+				<ul>
+					<li><a href="/index.html">Depan</a></li>
+					<li><a href="/arsip.html">Arsip</a></li>
+					<li><a href="/perihal.html#saya">Tentang Saya</a></li>
+					<li><a href="/perihal.html#kolofon">Kolofon</a></li>
+				</ul>
+			</nav>
+			
+			<hr class="nothing" />
+			
+			<article>
+	<header>
+		<h2><a href="/blog/peuler29.html">Project Euler Problem 29</a></h2>
+		<span class="posted">14 May 2011</span>
+	</header>
+	<p>Problem 29 ini, lagi-lagi bisa selesai dengan jurus asal-paksa, tentu saja dengan bantuan ular <a href="http://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>. Pertanyaannya, ada berapa nilai a^b yang berbeda untuk 2&lt;=a&lt;=100 dan 2&lt;=b&lt;=100? Kemungkinan terbesar cuma 99*99 atau 9801 biji, sedikit itu. Tapi ya jumlahnya nggak sebanyak itu, karena misalnya saja 2^4 sama 4^2 kan ya..</p>
+<p>Step yang saya kerjakan:</p>
+<ol>
+	<li>Buat list kosong, list ini untuk menyimpan hasil hitungan a^b.</li>
+	<li>Hitung a^b untuk a dari 2 sampai 100, masing-masing b dari 2 sampai 100 juga.</li>
+	<li>Tiap hasil ab tadi, dicek apakah sudah ada di dalam list, kalau belum, masukkan ke dalam list.</li>
+	<li>Setelah beres, hitung jumlah anggota list.</li>
+	<li>Beres.</li>
+</ol>
+
+<footer>
+	<h3>Komentar</h3>
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'wildtype'; // required: replace example with your forum shortname
+    var disqus_url = 'http://wildtype.github.com/'+'/blog/peuler29.html';
+    var disqus_identifier = 'Project Euler Problem 29';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+	</footer>
+
+</article>
+<hr class="sep" />
+<aside>Hei, udah sampai bawah, terus kemana?
+<a href="/arsip.html">Lihat arsip</a>, ke <a href="/index.html">halaman depan</a> atau <a href="#top">ke atas</a>?
+<ul>
+						<li class="feed"><a href="/atom.xml">Sindikasi Atom</a></li>
+						<li class="facebook"><a href="http://facebook.com/warasdewe">Facebook</a></li>
+						<li class="twitter"><a href="http://twitter.com/warasdewe">Twitter</a></li>
+						<li class="last"><a href="http://last.fm/users/muftisip">Last.fm</a></li>
+						<li class="flickr"><a href="http://flickr.com/people/muftisip">Flickr</a></li>
+					</ul><br class="clr" /></aside>	
+
+
+				
+				<footer>
+					Ditulis dengan vim, dipublish dengan jekyll dan github
+				</footer>
+		</div>
+	<!--<script type="text/javascript"> WebFontConfig={google:{families:['PT+Serif+Caption::latin','Lemon::latin','Telex::latin','Cambo::latin']}};(function(){var wf=document.createElement('script');wf.src=('https:'==document.location.protocol?'https':'http')+'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';wf.type='text/javascript';wf.async='true';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(wf,s)})();</script>-->
+	</body>
+</html>
